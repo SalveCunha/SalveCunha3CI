@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "696288754599",
+    "firebase_url": "https://salve-cunha-5aed7.firebaseio.com",
+    "project_id": "salve-cunha-5aed7",
+    "storage_bucket": "salve-cunha-5aed7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696288754599:android:0f3179775395ca46c09482",
+        "android_client_info": {
+          "package_name": "com.example.projetosalvecunha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696288754599-32h1ge0jcn7uj48c6jonsru2kcuqvtdk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.projetosalvecunha",
+            "certificate_hash": "f1260f5cfbd1edbe38793f66ce8281b0cf06bf9b"
+          }
+        },
+        {
+          "client_id": "696288754599-d2ql49c01g48c19sh6d1uq25kn107kou.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpPy6AXSmTvpRzfg4Iuwj_aMs7HS_5PRk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "696288754599-d2ql49c01g48c19sh6d1uq25kn107kou.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

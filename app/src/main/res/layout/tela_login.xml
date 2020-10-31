@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:onClick="irtelarecu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="45dp"
+                android:text="E-mail"
+                android:textColor="#C697E3"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imageUser2"
+                app:layout_constraintTop_toBottomOf="@+id/textoLogin2" />
+
+            <ImageView
+                android:id="@+id/imagemIcone3"
+                android:layout_width="189dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="30dp"
+                android:baselineAlignBottom="true"
+                android:src="@drawable/icone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textoProj3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Salve Cunhã"
+                android:textColor="#F1A5CF"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imagemIcone3" />
+
+            <TextView
+                android:id="@+id/textoLogin2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Para continuar, faça o login."
+                android:textColor="#7EDDB0"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textoProj3" />
+
+            <ImageView
+                android:id="@+id/imageUser2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/user"
+                app:layout_constraintStart_toStartOf="@+id/edtemaill"
+                app:layout_constraintTop_toBottomOf="@+id/textoLogin2" />
+
+            <EditText
+                android:id="@+id/edtemaill"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/borda"
+
+                android:ems="10"
+                android:foregroundTint="#C697E3"
+                android:foregroundTintMode="add"
+                android:inputType="textEmailAddress"
+                android:shadowColor="#CE97E3"
+                android:textColor="#313131"
+                android:textColorHighlight="#C697E3"
+                android:textColorLink="#C697E3"
+                android:textCursorDrawable="@android:color/holo_purple"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/cadeado"
+                app:layout_constraintStart_toStartOf="@+id/edtsenhal"
+                app:layout_constraintTop_toBottomOf="@+id/edtemaill" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="25dp"
+                android:text="Senha"
+                android:textColor="#C697E3"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/edtemaill" />
+
+            <EditText
+                android:id="@+id/edtsenhal"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/borda"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:shadowColor="#CE97E3"
+                android:textColor="#080709"
+                android:textColorHighlight="#C697E3"
+                android:textColorLink="#C697E3"
+                android:textCursorDrawable="@android:color/holo_purple"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <ImageView
+                android:id="@+id/btnentrar"
+                android:layout_width="126dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="10dp"
+                android:onClick="login"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtsenhal"
+                app:srcCompat="@drawable/btnentrar" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="6dp"
+                android:layout_marginTop="68dp"
+                android:background="#C697E3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnentrar" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="39dp"
+                android:background="#FAFAFA"
+                android:padding="20dp"
+                android:text="OU"
+                android:textColor="#C697E3"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnentrar" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="irtelarecu"
+                android:text="Esqueceu a senha?"
+                android:textColor="#7EDDB0"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/textView12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView12" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="irtelacadastro"
+                android:text="Cadastrar conta"
+                android:textColor="#7EDDB0"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView12"
+                app:layout_constraintTop_toTopOf="@+id/textView12" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView12"
+                app:srcCompat="@drawable/continuarwfacebook" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView7"
+                app:srcCompat="@drawable/continuarwgoogle" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
